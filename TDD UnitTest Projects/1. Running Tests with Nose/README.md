@@ -18,7 +18,7 @@
       ``` 
  * if the version number is displayed then the environment is set up
 
-## Steps,
+## Steps to Unittest using python builtin Module,
 
  * after cloning the repository,and navigated to the project path.
  * move to the first project by typing <br/>
@@ -36,3 +36,26 @@
     ```
      
  (when viewing the output you may find some redundant function name is also displaying along with the output)
+ we can handle this better by using Nose
+
+       Nose is python testing framework used to extent python built in __unittest__ module, making it easier it write and test
+
+## Steps to Unittest using python testing Framework __NOSE__,
+ * install the Nose in python Package Manager __pip__
+
+    ``` bash
+     pip install nose
+    ```
+* verify nose is installed, by  running
+    
+    ``` bash
+     pip show nose
+    ```
+(if nose library is installed command will display version, location)
+
+ * now run unitest using nosetest
+
+    
+    ``` bash
+     nosetests -v
+    ```
