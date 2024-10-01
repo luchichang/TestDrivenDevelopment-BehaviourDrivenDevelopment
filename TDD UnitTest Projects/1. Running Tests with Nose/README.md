@@ -11,15 +11,15 @@
  
  * install the PIP python Package manager
    
- * After Installation completed verify everything works fine by running,
-    python3 --version 
-    pip --version 
+ * After Installation completed verify everything works fine by running, <br/>
+       python3 --version 
+       pip --version 
  * if the version number is displayed then the environment is set up
 
 ## Steps,
 
  * after cloning the repository,and navigated to the project path.
- * move to the first project by typing
+ * move to the first project by typing <br/>
      cd "TDD UnitTest Projects"/"1. Running Tests with Nose"/
 
  * invoke pythons default standard library module __Unittest__ by running
