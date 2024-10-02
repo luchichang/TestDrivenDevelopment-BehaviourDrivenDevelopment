@@ -36,3 +36,5 @@
  * by watching the console output, its clear that the test are not running in the linear order reason is. <br/>
 
    Nose runs tests in a pseudo-random order. This is to ensure that test cases do not affect the order of execution or depend on it to work.
+
+ * write the test assertion using __assert__ function
