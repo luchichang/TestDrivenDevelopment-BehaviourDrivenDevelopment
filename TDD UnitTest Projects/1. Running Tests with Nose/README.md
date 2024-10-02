@@ -40,7 +40,7 @@
 
        Nose is python testing framework used to extent python built in __unittest__ module, making it easier it write and test
 
-## Steps to Unittest using python testing Framework __NOSE__,
+## Steps to Unittest using python testing Framework __NOSE__ ,
  * install the Nose in python Package Manager __pip__
 
     ``` bash
@@ -59,3 +59,26 @@
     ``` bash
      nosetests -v
     ```
+
+## for making the better output
+ * install pinocchio module for having the colored output, where green indicates the test is passed and red indicates test is failed 
+
+ * install the __pinocchio__  python plugin library 
+
+   ``` bash
+     pip install pinocchio
+   ``` 
+ * once installed verify the download is completed by running 
+   ``` bash
+     pip show pinocchio
+   ``` 
+ (if the version and other details are displayed then plugin is installed sucessfully)
+
+ * now run the __nosetest__ along with pinocchio plugin
+   
+  (note: here options are represented in kebab case. for more details on these cases do check my linkedin post 
+  https://www.linkedin.com/feed/update/urn:li:activity:7246521659031986176/
+    ) 
+   ``` bash
+     nosetests --with-spec --spec-color
+   ``` 
