@@ -76,9 +76,56 @@
 
  * now run the __nosetest__ along with pinocchio plugin
    
-  (note: here options are represented in kebab case. for more details on these cases do check my linkedin post 
-  https://www.linkedin.com/feed/update/urn:li:activity:7246521659031986176/
-    ) 
+  
    ``` bash
      nosetests --with-spec --spec-color
    ``` 
+  (note: in the above command options are represented in kebab case. for more details on these cases do check my linkedin post 
+  https://www.linkedin.com/feed/update/urn:li:activity:7246521659031986176/
+    ) 
+
+ * after running the nosetest with pinocchio plugin you can observe the better readability in output
+ 
+     Note: In the output, green color indicates that all tests have passed. In case any test fails, the color for that test in the output will be red. Also note that you no longer need the -v because --with-spec already gives verbose output. 
+
+## adding Test coverage along with nosetest
+ * the __nosetest__ will run the test for described test cases and the __coverage__ tool will give a report of what are the lines are tested so that we can add test against the uncovered lines of our code
+ 
+ * install __coverage__ tool
+
+    ``` bash
+     pip install coverage
+   ``` 
+ * next call the coverage through nose by adding the __--with-coverage__ parameter 
+
+    ``` bash
+     nosetests --with-spec --spec-color --with-coverage
+   ```  
+ (note: by running this above command you will get a detailed report about the code covered so that you can assure you have written testcases for all the code)
+
+     One useful feature of the coverage tool is that it can report which lines of code are missing coverage. With that information, you know the lines for which you need to add more test cases so that your testing executes those missing lines of code.
+ * to get the missing coverage report run the below commadn in the terminal 
+
+  ``` bash
+    coverage report -m 
+  ``` 
+
+  (note: there will be new column added with missing name which denotes the missed line )
+
+  ## for command simplicity 
+
+  * instead of writing the long command you can just configure the command in __setup.cfg__ file where you paste the following command
+
+   ```
+   [nosetests]
+   verbosity=2
+   with-spec=1
+   spec-color=1
+   with-coverage=1
+   cover-erase=1
+   cover-package=triangle
+   [coverage:report]
+   show_missing = True
+   ```
+
+* so that now just by running the __nosetests__ command you will get all the configured options 
