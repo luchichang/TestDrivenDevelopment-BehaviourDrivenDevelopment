@@ -1,5 +1,3 @@
-# Writing the content into README.md file
-content = """
 # Test Fixtures for the Flask Web Application
 
 ## Description
