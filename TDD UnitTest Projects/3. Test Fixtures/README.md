@@ -13,5 +13,22 @@
       Test fixtures are helpful for many testing situations. such creating mock data object, loading the database with a known dataset. </br>
       Testfixtures operates at three levels of specificity, </br>
           * __Module Level__ </br>
+         ``` python
+          def setUpModule():             # runs once before any tests
+          def tearDownModule():          # runs once after all tests
+         ```
           * __TestCase Level__ </br>
+          ``` python
+           @classmethod
+           def setUpClass(cls):       # runs once before test case
+           @classmethod
+           def tearDownClass(cls):    # runs once after test case
+         ```
+         
           * __Test Level__ </br>
+
+          ``` python
+               def setUpModule():             # runs once before any tests
+               def tearDownModule():          # runs once after any tests
+          ```
+         
