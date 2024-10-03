@@ -18,13 +18,14 @@
           def tearDownModule():          # runs once after all tests
          ```
           * __TestCase Level__ </br>
-          ``` python
-           @classmethod
-           def setUpClass(cls):       # runs once before test case
-           @classmethod
-           def tearDownClass(cls):    # runs once after test case
-         ```
-         
+
+             ``` python
+                 @classmethod
+                 def setUpClass(cls):       # runs once before test case
+                 @classmethod
+                 def tearDownClass(cls):    # runs once after test case
+             ```
+         <br/>
           * __Test Level__ </br>
 
           ``` python
