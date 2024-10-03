@@ -9,7 +9,7 @@
   * Sad Paths
       Sad Path checks whether the funciton responds appropriately to the exceptions without breaking when Negative Outcome is tested
   * Test Fixtures
-      Test fixtures establishes a known initial state before and after each test
+      Test fixtures establishes a known initial state before and after each test </br>
       Test fixtures are helpful for many testing situations. such creating mock data object, loading the database with a known dataset
       Testfixtures operates at three levels of specificity,
           * __Module Level__
