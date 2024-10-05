@@ -22,3 +22,9 @@
   cd
 ```
 ## Steps,
+
+* create the virtual environment
+  ``` bash
+     https://github.com/luchichang/Misc-Info/blob/main/Python%20create%20virtual%20Environment/README.md
+  ```
+* 
